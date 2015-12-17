@@ -1,0 +1,27 @@
+﻿<Window x:Class="R1_lammas.view.MyW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R1_lammas.view"
+        mc:Ignorable="d" Loaded="MyW_OnLoaded"
+        Title="" Height="338" Width="601" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="Window_Closing" >
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="45" Margin="159,10,0,0" VerticalAlignment="Top" Width="245">
+            <Label x:Name="label_Copy" Content="Meu IP :" Canvas.Left="17" Canvas.Top="7" Foreground="#FF00A2FF" FontSize="14"/>
+            <Label x:Name="Lblmeuip" Content="000.000.000.00" Canvas.Left="85" Canvas.Top="7" Width="137" FontSize="14"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="212" Margin="10,55,0,0" VerticalAlignment="Top" Width="573">
+            <Label x:Name="label_Copy2" Content="Console log :" Canvas.Left="10" Canvas.Top="10" Foreground="#FF00A2FF"/>
+            <TextBox x:Name="TxtLog" IsEnabled="False" Height="169" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="33" Width="553" VerticalScrollBarVisibility="Visible" FontSize="14" FontFamily="Segoe UI Light"/>
+        </Canvas>
+        <StatusBar HorizontalAlignment="Left" Height="39" Margin="0,272,0,0" VerticalAlignment="Top" Width="583">
+            <Label x:Name="label_Copy3" Content="Servico :" Foreground="#FF00A2FF"/>
+            <Label x:Name="LblServicoStatus" Content="Desligado"/>
+            <Label x:Name="label_Copy5" Content="Total de usuario(s) online :" Width="142" Foreground="#FF00A2FF"/>
+            <Label x:Name="LblTotalUsuarioOn" Content="00"/>
+            <Label x:Name="label_Copy7" Content="Rev.2" Foreground="Red"/>
+        </StatusBar>
+
+    </Grid>
+</Window>
